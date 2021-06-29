@@ -1,0 +1,11 @@
+D:\CSharp_TeamProject\CSharp_TeamProject\bin\Debug\CSharp_TeamProject.exe.config
+D:\CSharp_TeamProject\CSharp_TeamProject\bin\Debug\CSharp_TeamProject.exe
+D:\CSharp_TeamProject\CSharp_TeamProject\bin\Debug\CSharp_TeamProject.pdb
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.csprojAssemblyReference.cache
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.BookSearch.resources
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.MainForm1.resources
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.Properties.Resources.resources
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.csproj.GenerateResource.cache
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.csproj.CoreCompileInputs.cache
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.exe
+D:\CSharp_TeamProject\CSharp_TeamProject\obj\Debug\CSharp_TeamProject.pdb
