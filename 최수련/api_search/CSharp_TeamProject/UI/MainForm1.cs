@@ -23,60 +23,72 @@ namespace CSharp_TeamProject
         private void bt_bookSearch_Click(object sender, EventArgs e)
         {
 
-            using (WebClient wc = new WebClient())
+            if (String.IsNullOrWhiteSpace(txt_bookSearch.Text))
             {
-                wc.Encoding = Encoding.UTF8;
-                string url_base = "https://www.dlibrary.go.kr/openapi/call.do";
-                string key = "ucLBdEXFmXJ26tm8oH1LPA==";
-                string title = txt_bookSearch.Text;
-
-
-                string URL = $"{url_base}?dist_key={key}&func_id=3&sw={title}&sf=";
-                //Console.WriteLine(URL);
-
-                var json = wc.DownloadString(URL);
-                
-                JObject obj = JObject.Parse(json);
-
-
-
-                foreach (var item in obj["result"])
+                MessageBox.Show("책제목을 입력해주세요");
+            }
+            else {
+                using (WebClient wc = new WebClient())
                 {
-                    book tempbook = new book();
+                    wc.Encoding = Encoding.UTF8;
+                    string url_base = "https://www.dlibrary.go.kr/openapi/call.do";
+                    string key = "ucLBdEXFmXJ26tm8oH1LPA==";
+                    string title = txt_bookSearch.Text;
 
-                    string bname = item["title"].ToString();
-                    string result = string.Empty;
-                    result = bname.Replace("</span>","");
-                    result = result.Replace("<span class=\"word\">", "");
 
-                    tempbook.Title = result;
-                    tempbook.Isbn = item["ndl_bib_no"].ToString();
+                    string URL = $"{url_base}?dist_key={key}&func_id=3&sw={title}&sf=";
+                    //Console.WriteLine(URL);
 
- 
-                    try
+                    var json = wc.DownloadString(URL);
+
+                    JObject obj = JObject.Parse(json);
+
+
+
+                    foreach (var item in obj["result"])
                     {
-                        tempbook.Author = item["author"].ToString();
+                        book tempbook = new book();
 
-                        tempbook.Publisher = item["publisher"].ToString();
+                        string bname = item["title"].ToString();
+                        string writer = item["author"].ToString();
+                        string publisher = item["publisher"].ToString();
+                        string pyear = item["publisher_year"].ToString();
+                        string result = string.Empty;
+                        result = bname.Replace("</span>", "");
+                        result = result.Replace("<span class=\"word\">", "");
+                        writer = writer.Replace("</span>", "");
+                        writer = writer.Replace("<span class=\"word\">", "");
+                        publisher = publisher.Replace("</span>", "");
+                        publisher = publisher.Replace("<span class=\"word\">", "");
+                        pyear = writer.Replace("</span>", "");
+                        pyear = result.Replace("<span class=\"word\">", "");
 
+                        tempbook.Title = result;
+                        tempbook.Isbn = item["ndl_bib_no"].ToString();
+                        try
+                        {
+                            tempbook.Author = writer;
+                            tempbook.Publisher = publisher;
+                        }
+                        catch (Exception ex)
+                        {
+                            continue;
+                        }
+
+                        tempbook.Year = pyear;
+                        DataManager.books.Add(tempbook);
                     }
-                    catch (Exception ex)
-                    {
-                        continue;
-                    }
-                    tempbook.Year = item["publisher_year"].ToString();
-                    DataManager.books.Add(tempbook);
+
+
+                    //1. DataManager 클래스 만들어서 거기서 MainForm1과 BookSearch 화면이 접근할 수 있는 List를 만든다.
+
+
+                    //2. 그 리스트에 위 반복문처럼 (foreach문) title등 넣는다.
+
+                    //3. 다음 화면 불러들일 때 이 리스트를 넘겨서, DataSource에 넣는다.
+
+                    new BookSearch(DataManager.books).ShowDialog();
                 }
-
-
-                //1. DataManager 클래스 만들어서 거기서 MainForm1과 BookSearch 화면이 접근할 수 있는 List를 만든다.
-
-
-                //2. 그 리스트에 위 반복문처럼 (foreach문) title등 넣는다.
-
-                //3. 다음 화면 불러들일 때 이 리스트를 넘겨서, DataSource에 넣는다.
-
-                new BookSearch(DataManager.books).ShowDialog();
 
 
             }
