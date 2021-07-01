@@ -49,34 +49,38 @@ namespace CSharp_TeamProject
                     {
                         book tempbook = new book();
 
-                        string bname = item["title"].ToString();
-                        string writer = item["author"].ToString();
-                        string publisher = item["publisher"].ToString();
-                        string pyear = item["publisher_year"].ToString();
-                        string result = string.Empty;
-                        result = bname.Replace("</span>", "");
-                        result = result.Replace("<span class=\"word\">", "");
-                        writer = writer.Replace("</span>", "");
-                        writer = writer.Replace("<span class=\"word\">", "");
-                        publisher = publisher.Replace("</span>", "");
-                        publisher = publisher.Replace("<span class=\"word\">", "");
-                        pyear = writer.Replace("</span>", "");
-                        pyear = result.Replace("<span class=\"word\">", "");
-
-                        tempbook.Title = result;
-                        tempbook.Isbn = item["ndl_bib_no"].ToString();
-                        try
+                        if (item["title"] != null && item["author"] != null && item["publisher"] != null)
                         {
-                            tempbook.Author = writer;
-                            tempbook.Publisher = publisher;
-                        }
-                        catch (Exception ex)
-                        {
-                            continue;
-                        }
+                            string bname = item["title"].ToString();
+                            string writer = item["author"].ToString();
+                            string publisher = item["publisher"].ToString();
+                            string pyear = item["publisher_year"].ToString();
+                            string result = string.Empty;
+                            result = bname.Replace("</span>", "");
+                            result = result.Replace("<span class=\"word\">", "");
+                            writer = writer.Replace("</span>", "");
+                            writer = writer.Replace("<span class=\"word\">", "");
+                            publisher = publisher.Replace("</span>", "");
+                            publisher = publisher.Replace("<span class=\"word\">", "");
+                            pyear = pyear.Replace("</span>", "");
+                            pyear = pyear.Replace("<span class=\"word\">", "");
+                            try
+                            {
+                                tempbook.Title = result;
+                                tempbook.Isbn = item["ndl_bib_no"].ToString();
+                                tempbook.Author = writer;
+                                tempbook.Publisher = publisher;
+                                tempbook.Year = pyear;
+                            }
+                            catch (Exception ex)
+                            {
+                                continue;
+                            }
 
-                        tempbook.Year = pyear;
-                        DataManager.books.Add(tempbook);
+                            DataManager.books.Add(tempbook);
+                        }
+   
+                        
                     }
 
 
