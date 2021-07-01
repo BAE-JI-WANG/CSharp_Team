@@ -31,6 +31,12 @@ namespace CSharp_TeamProject
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.isbnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.bt_bookSearch = new System.Windows.Forms.Button();
             this.txt_bookSearch = new System.Windows.Forms.TextBox();
@@ -40,25 +46,19 @@ namespace CSharp_TeamProject
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.gr_bookDeatail = new System.Windows.Forms.GroupBox();
+            this.label_pyear = new System.Windows.Forms.Label();
+            this.label_publisher = new System.Windows.Forms.Label();
+            this.label_writer = new System.Windows.Forms.Label();
+            this.label_bname = new System.Windows.Forms.Label();
+            this.label_isbn = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label_isbn = new System.Windows.Forms.Label();
-            this.label_bname = new System.Windows.Forms.Label();
-            this.label_writer = new System.Windows.Forms.Label();
-            this.label_publisher = new System.Windows.Forms.Label();
-            this.label_pyear = new System.Windows.Forms.Label();
-            this.isbnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.gr_bookDeatail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            this.gr_bookDeatail.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -78,6 +78,40 @@ namespace CSharp_TeamProject
             this.dataGridView1.Size = new System.Drawing.Size(884, 403);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // isbnDataGridViewTextBoxColumn
+            // 
+            this.isbnDataGridViewTextBoxColumn.DataPropertyName = "Isbn";
+            this.isbnDataGridViewTextBoxColumn.HeaderText = "Isbn";
+            this.isbnDataGridViewTextBoxColumn.Name = "isbnDataGridViewTextBoxColumn";
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "제목";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            // 
+            // authorDataGridViewTextBoxColumn
+            // 
+            this.authorDataGridViewTextBoxColumn.DataPropertyName = "Author";
+            this.authorDataGridViewTextBoxColumn.HeaderText = "저자";
+            this.authorDataGridViewTextBoxColumn.Name = "authorDataGridViewTextBoxColumn";
+            // 
+            // publisherDataGridViewTextBoxColumn
+            // 
+            this.publisherDataGridViewTextBoxColumn.DataPropertyName = "Publisher";
+            this.publisherDataGridViewTextBoxColumn.HeaderText = "출판사";
+            this.publisherDataGridViewTextBoxColumn.Name = "publisherDataGridViewTextBoxColumn";
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "발행연도";
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(CSharp_TeamProject.book);
             // 
             // label1
             // 
@@ -109,6 +143,7 @@ namespace CSharp_TeamProject
             // PickReturnPlanDate
             // 
             this.PickReturnPlanDate.Location = new System.Drawing.Point(336, 127);
+            this.PickReturnPlanDate.MinDate = new System.DateTime(2021, 7, 1, 0, 0, 0, 0);
             this.PickReturnPlanDate.Name = "PickReturnPlanDate";
             this.PickReturnPlanDate.Size = new System.Drawing.Size(154, 21);
             this.PickReturnPlanDate.TabIndex = 39;
@@ -127,6 +162,7 @@ namespace CSharp_TeamProject
             // PickRentDate
             // 
             this.PickRentDate.Location = new System.Drawing.Point(85, 127);
+            this.PickRentDate.MinDate = new System.DateTime(2021, 7, 1, 0, 0, 0, 0);
             this.PickRentDate.Name = "PickRentDate";
             this.PickRentDate.Size = new System.Drawing.Size(154, 21);
             this.PickRentDate.TabIndex = 37;
@@ -170,6 +206,51 @@ namespace CSharp_TeamProject
             this.gr_bookDeatail.TabIndex = 41;
             this.gr_bookDeatail.TabStop = false;
             this.gr_bookDeatail.Text = "상세정보";
+            // 
+            // label_pyear
+            // 
+            this.label_pyear.AutoSize = true;
+            this.label_pyear.Location = new System.Drawing.Point(74, 146);
+            this.label_pyear.Name = "label_pyear";
+            this.label_pyear.Size = new System.Drawing.Size(11, 12);
+            this.label_pyear.TabIndex = 19;
+            this.label_pyear.Text = "-";
+            // 
+            // label_publisher
+            // 
+            this.label_publisher.AutoSize = true;
+            this.label_publisher.Location = new System.Drawing.Point(49, 118);
+            this.label_publisher.Name = "label_publisher";
+            this.label_publisher.Size = new System.Drawing.Size(11, 12);
+            this.label_publisher.TabIndex = 18;
+            this.label_publisher.Text = "-";
+            // 
+            // label_writer
+            // 
+            this.label_writer.AutoSize = true;
+            this.label_writer.Location = new System.Drawing.Point(45, 93);
+            this.label_writer.Name = "label_writer";
+            this.label_writer.Size = new System.Drawing.Size(11, 12);
+            this.label_writer.TabIndex = 17;
+            this.label_writer.Text = "-";
+            // 
+            // label_bname
+            // 
+            this.label_bname.AutoSize = true;
+            this.label_bname.Location = new System.Drawing.Point(74, 65);
+            this.label_bname.Name = "label_bname";
+            this.label_bname.Size = new System.Drawing.Size(11, 12);
+            this.label_bname.TabIndex = 16;
+            this.label_bname.Text = "-";
+            // 
+            // label_isbn
+            // 
+            this.label_isbn.AutoSize = true;
+            this.label_isbn.Location = new System.Drawing.Point(49, 38);
+            this.label_isbn.Name = "label_isbn";
+            this.label_isbn.Size = new System.Drawing.Size(11, 12);
+            this.label_isbn.TabIndex = 15;
+            this.label_isbn.Text = "-";
             // 
             // label7
             // 
@@ -216,85 +297,6 @@ namespace CSharp_TeamProject
             this.label6.TabIndex = 7;
             this.label6.Text = "Isbn :";
             // 
-            // label_isbn
-            // 
-            this.label_isbn.AutoSize = true;
-            this.label_isbn.Location = new System.Drawing.Point(49, 38);
-            this.label_isbn.Name = "label_isbn";
-            this.label_isbn.Size = new System.Drawing.Size(11, 12);
-            this.label_isbn.TabIndex = 15;
-            this.label_isbn.Text = "-";
-            // 
-            // label_bname
-            // 
-            this.label_bname.AutoSize = true;
-            this.label_bname.Location = new System.Drawing.Point(74, 65);
-            this.label_bname.Name = "label_bname";
-            this.label_bname.Size = new System.Drawing.Size(11, 12);
-            this.label_bname.TabIndex = 16;
-            this.label_bname.Text = "-";
-            // 
-            // label_writer
-            // 
-            this.label_writer.AutoSize = true;
-            this.label_writer.Location = new System.Drawing.Point(45, 93);
-            this.label_writer.Name = "label_writer";
-            this.label_writer.Size = new System.Drawing.Size(11, 12);
-            this.label_writer.TabIndex = 17;
-            this.label_writer.Text = "-";
-            // 
-            // label_publisher
-            // 
-            this.label_publisher.AutoSize = true;
-            this.label_publisher.Location = new System.Drawing.Point(49, 118);
-            this.label_publisher.Name = "label_publisher";
-            this.label_publisher.Size = new System.Drawing.Size(11, 12);
-            this.label_publisher.TabIndex = 18;
-            this.label_publisher.Text = "-";
-            // 
-            // label_pyear
-            // 
-            this.label_pyear.AutoSize = true;
-            this.label_pyear.Location = new System.Drawing.Point(74, 146);
-            this.label_pyear.Name = "label_pyear";
-            this.label_pyear.Size = new System.Drawing.Size(11, 12);
-            this.label_pyear.TabIndex = 19;
-            this.label_pyear.Text = "-";
-            // 
-            // isbnDataGridViewTextBoxColumn
-            // 
-            this.isbnDataGridViewTextBoxColumn.DataPropertyName = "Isbn";
-            this.isbnDataGridViewTextBoxColumn.HeaderText = "Isbn";
-            this.isbnDataGridViewTextBoxColumn.Name = "isbnDataGridViewTextBoxColumn";
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "제목";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            // 
-            // authorDataGridViewTextBoxColumn
-            // 
-            this.authorDataGridViewTextBoxColumn.DataPropertyName = "Author";
-            this.authorDataGridViewTextBoxColumn.HeaderText = "저자";
-            this.authorDataGridViewTextBoxColumn.Name = "authorDataGridViewTextBoxColumn";
-            // 
-            // publisherDataGridViewTextBoxColumn
-            // 
-            this.publisherDataGridViewTextBoxColumn.DataPropertyName = "Publisher";
-            this.publisherDataGridViewTextBoxColumn.HeaderText = "출판사";
-            this.publisherDataGridViewTextBoxColumn.Name = "publisherDataGridViewTextBoxColumn";
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "발행연도";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(CSharp_TeamProject.book);
-            // 
             // BookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -313,9 +315,9 @@ namespace CSharp_TeamProject
             this.Name = "BookSearch";
             this.Text = "BookRent";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             this.gr_bookDeatail.ResumeLayout(false);
             this.gr_bookDeatail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

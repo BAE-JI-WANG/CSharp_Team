@@ -20,10 +20,16 @@ namespace CSharp_TeamProject
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = books;
+            DateTime returnDate = DateTime.Now.AddDays(14);
+            string rDate = returnDate.ToString("yyyyMMdd");
+            PickReturnPlanDate.Value = new DateTime(returnDate.Year, returnDate.Month, returnDate.Day);
         }
         public BookSearch()
         {
             InitializeComponent();
+            DateTime returnDate = DateTime.Now.AddDays(14);
+            string rDate = returnDate.ToString("yyyyMMdd");
+            PickReturnPlanDate.Value = new DateTime(returnDate.Year,returnDate.Month,returnDate.Day);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

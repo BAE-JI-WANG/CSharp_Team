@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="book.cs" />
+    <Compile Include="rentData.cs" />
     <Compile Include="UI\BookSearch.cs">
       <SubType>Form</SubType>
     </Compile>
