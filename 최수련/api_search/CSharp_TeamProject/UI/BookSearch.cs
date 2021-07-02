@@ -14,15 +14,25 @@ namespace CSharp_TeamProject
 {
     public partial class BookSearch : Form
     {
+<<<<<<< Updated upstream:최수련/api_search/CSharp_TeamProject/UI/BookSearch.cs
         public BookSearch(List<book> books)
+=======
+        public BookSearcher(List<SearchBook> searchBooks, string userId)
+>>>>>>> Stashed changes:김두희/BookSearch(1)/Book_re/UI/BookSearcher.cs
         {
             InitializeComponent();
 
             dataGridView1.DataSource = null;
+<<<<<<< Updated upstream:최수련/api_search/CSharp_TeamProject/UI/BookSearch.cs
             dataGridView1.DataSource = books;
             DateTime returnDate = DateTime.Now.AddDays(14);
             string rDate = returnDate.ToString("yyyyMMdd");
             PickReturnPlanDate.Value = new DateTime(returnDate.Year, returnDate.Month, returnDate.Day);
+=======
+            dataGridView1.DataSource = searchBooks;
+            lb_RentDate.Text = DateTime.Now.ToLongDateString();
+            lb_ReturnPlanDate.Value = DateTime.Now.AddDays(14);
+>>>>>>> Stashed changes:김두희/BookSearch(1)/Book_re/UI/BookSearcher.cs
         }
         public BookSearch()
         {
@@ -46,6 +56,7 @@ namespace CSharp_TeamProject
 
         private void bt_bookSearch_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream:최수련/api_search/CSharp_TeamProject/UI/BookSearch.cs
             //dataGridView1.Columns.Clear();
             if (String.IsNullOrWhiteSpace(txt_bookSearch.Text))
             {
@@ -115,6 +126,17 @@ namespace CSharp_TeamProject
 
             }
         
+=======
+            
+
+        }
+
+
+        // 대여
+        private void bt_borrow_Click(object sender, EventArgs e)
+        {
+            
+>>>>>>> Stashed changes:김두희/BookSearch(1)/Book_re/UI/BookSearcher.cs
         }
     }
 }
