@@ -15,12 +15,11 @@ namespace Book_re
         {
             DBHelper.Query_Select();
             rank.Clear();
-
             foreach (DataRow item in DBHelper.ds.Tables[0].Rows)
             {
                 BookRank temp = new BookRank();
-                temp.rank = item["rank"].ToString();
-                temp.subject = item["subject"].ToString();
+                temp.rank = item["순위"].ToString();
+                temp.subject = item["category"].ToString();
                 rank.Add(temp);
             }
         }

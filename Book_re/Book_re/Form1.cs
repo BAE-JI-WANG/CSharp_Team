@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,8 +61,50 @@ namespace Book_re
             DataManager.Load();
             DGV_Subject.DataSource = null;
             DGV_Subject.DataSource = DataManager.rank;
+            tb1.Text = DGV_Subject.Rows[0].Cells[1].FormattedValue.ToString();
+            tb2.Text = DGV_Subject.Rows[1].Cells[1].FormattedValue.ToString();
+            tb3.Text = DGV_Subject.Rows[2].Cells[1].FormattedValue.ToString();
+            tb4.Text = DGV_Subject.Rows[3].Cells[1].FormattedValue.ToString();
+            tb5.Text = DGV_Subject.Rows[4].Cells[1].FormattedValue.ToString();
+            tb6.Text = DGV_Subject.Rows[5].Cells[1].FormattedValue.ToString();
+            tb7.Text = DGV_Subject.Rows[6].Cells[1].FormattedValue.ToString();
+            tb8.Text = DGV_Subject.Rows[7].Cells[1].FormattedValue.ToString();
+            tb9.Text = DGV_Subject.Rows[8].Cells[1].FormattedValue.ToString();
+            tb10.Text = DGV_Subject.Rows[9].Cells[1].FormattedValue.ToString();
+
+            string[] tbArray = new string[] 
+            {
+                tb1.Text,
+                tb2.Text,
+                tb3.Text,
+                tb4.Text,
+                tb5.Text,
+                tb6.Text,
+                tb7.Text,
+                tb8.Text,
+                tb9.Text,
+                tb10.Text
+            };
+
+            UIDataGridView[] udArray = new UIDataGridView[]
+            { 
+                DGV_rank1,DGV_rank2, DGV_rank3,DGV_rank4,DGV_rank5,DGV_rank6,DGV_rank7,DGV_rank8,
+                DGV_rank9, DGV_rank10
+            };
+
+            for (int i = 0; i < 10; i++)
+            {
+                show_data(tbArray[i], udArray[i]);
+            }
+
         }
 
+        private void show_data(string text, UIDataGridView ud)
+        {
+            DBHelper.BookRank(text);
+            ud.DataSource = DBHelper.ds;
+            ud.DataMember = "book";
+        }
         private void bt_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -70,6 +113,7 @@ namespace Book_re
         private void DGV_Subject_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             uiTabControl1.SelectedIndex = DGV_Subject.CurrentRow.Index;
+           // Console.WriteLine( ((UIDataGridView) sender).ToString());
         }
     }
 }

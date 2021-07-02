@@ -3,7 +3,6 @@ D:\CSharp_Team\Book_re\Book_re\bin\Debug\Book_re.exe
 D:\CSharp_Team\Book_re\Book_re\bin\Debug\Book_re.pdb
 D:\CSharp_Team\Book_re\Book_re\bin\Debug\SunnyUI.Common.dll
 D:\CSharp_Team\Book_re\Book_re\bin\Debug\SunnyUI.dll
-D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csprojAssemblyReference.cache
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.Form1.resources
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.Properties.Resources.resources
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csproj.GenerateResource.cache
@@ -11,3 +10,4 @@ D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csproj.CoreCompileInputs.cache
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csproj.CopyComplete
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.exe
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.pdb
+D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csprojAssemblyReference.cache
