@@ -112,8 +112,30 @@ namespace Book_re
 
         private void DGV_Subject_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            uiTabControl1.SelectedIndex = DGV_Subject.CurrentRow.Index;
-           // Console.WriteLine( ((UIDataGridView) sender).ToString());
+            //UIDataGridView[] udArray = new UIDataGridView[]
+            //{
+            //    DGV_rank1,DGV_rank2, DGV_rank3,DGV_rank4,DGV_rank5,DGV_rank6,DGV_rank7,DGV_rank8,
+            //    DGV_rank9, DGV_rank10
+            //};
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    show_data(udArray[i]);
+            //}
+            //uiTabControl1.SelectedIndex = DGV_Subject.CurrentRow.Index;
+            // Console.WriteLine( ((UIDataGridView) sender).ToString());
+            
+        }
+
+        private void DGV_rank1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string btitle = DGV_rank1.Rows[e.RowIndex].Cells[3].Value.ToString();
+
+            BookInfoForm bifrm = new BookInfoForm(btitle);
+
+            bifrm.Owner = this;
+            bifrm.Show();
+            //MessageBox.Show(btitle);
         }
     }
 }

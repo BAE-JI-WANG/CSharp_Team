@@ -29,6 +29,7 @@ namespace Book_re
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
+                Console.WriteLine("connect Fail");
             }
         }
 
