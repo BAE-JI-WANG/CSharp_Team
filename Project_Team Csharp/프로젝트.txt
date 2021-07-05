@@ -1,0 +1,9 @@
+domain-table연동 클래스
+DAO-데이터베이스 연결 클래스
+repository-결과물 관리 클래스
+service-고객요구 기능 (CRUD 포함)
+controller-member제어,book제어
+modelview-Form
+
+1.member
+2.book
