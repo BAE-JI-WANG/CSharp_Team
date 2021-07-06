@@ -31,16 +31,22 @@ namespace Book_re
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookInfoForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_exit = new Sunny.UI.UIImageButton();
-            this.txt_booksearch = new Sunny.UI.UIRichTextBox();
             this.bt_booksearch = new Sunny.UI.UIButton();
+            this.txt_booksearch = new Sunny.UI.UIRichTextBox();
+            this.bt_exit = new Sunny.UI.UIImageButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.bt_booksearch);
             this.panel1.Controls.Add(this.txt_booksearch);
             this.panel1.Controls.Add(this.bt_exit);
@@ -51,19 +57,21 @@ namespace Book_re
             this.panel1.Size = new System.Drawing.Size(638, 679);
             this.panel1.TabIndex = 0;
             // 
-            // bt_exit
+            // bt_booksearch
             // 
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.bt_exit.Image = ((System.Drawing.Image)(resources.GetObject("bt_exit.Image")));
-            this.bt_exit.Location = new System.Drawing.Point(606, 3);
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Size = new System.Drawing.Size(29, 28);
-            this.bt_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bt_exit.TabIndex = 4;
-            this.bt_exit.TabStop = false;
-            this.bt_exit.Text = null;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            this.bt_booksearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_booksearch.FillColor = System.Drawing.Color.Maroon;
+            this.bt_booksearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.bt_booksearch.Location = new System.Drawing.Point(518, 68);
+            this.bt_booksearch.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bt_booksearch.Name = "bt_booksearch";
+            this.bt_booksearch.Radius = 15;
+            this.bt_booksearch.RectColor = System.Drawing.Color.Black;
+            this.bt_booksearch.Size = new System.Drawing.Size(100, 35);
+            this.bt_booksearch.Style = Sunny.UI.UIStyle.Custom;
+            this.bt_booksearch.TabIndex = 6;
+            this.bt_booksearch.Text = "Search";
+            this.bt_booksearch.Click += new System.EventHandler(this.bt_booksearch_Click);
             // 
             // txt_booksearch
             // 
@@ -83,21 +91,36 @@ namespace Book_re
             this.txt_booksearch.TabIndex = 5;
             this.txt_booksearch.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bt_booksearch
+            // bt_exit
             // 
-            this.bt_booksearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_booksearch.FillColor = System.Drawing.Color.Maroon;
-            this.bt_booksearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.bt_booksearch.Location = new System.Drawing.Point(518, 68);
-            this.bt_booksearch.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bt_booksearch.Name = "bt_booksearch";
-            this.bt_booksearch.Radius = 15;
-            this.bt_booksearch.RectColor = System.Drawing.Color.Black;
-            this.bt_booksearch.Size = new System.Drawing.Size(100, 35);
-            this.bt_booksearch.Style = Sunny.UI.UIStyle.Custom;
-            this.bt_booksearch.TabIndex = 6;
-            this.bt_booksearch.Text = "Search";
-            this.bt_booksearch.Click += new System.EventHandler(this.bt_booksearch_Click);
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.bt_exit.Image = ((System.Drawing.Image)(resources.GetObject("bt_exit.Image")));
+            this.bt_exit.Location = new System.Drawing.Point(606, 3);
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.Size = new System.Drawing.Size(29, 28);
+            this.bt_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_exit.TabIndex = 4;
+            this.bt_exit.TabStop = false;
+            this.bt_exit.Text = null;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(41, 158);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(536, 118);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(293, 302);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(283, 210);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // BookInfoForm
             // 
@@ -114,6 +137,8 @@ namespace Book_re
             this.Text = "BookInfoForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bt_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,5 +149,7 @@ namespace Book_re
         private Sunny.UI.UIImageButton bt_exit;
         private Sunny.UI.UIButton bt_booksearch;
         private Sunny.UI.UIRichTextBox txt_booksearch;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

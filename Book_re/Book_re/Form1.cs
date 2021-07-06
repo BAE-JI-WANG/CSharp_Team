@@ -35,7 +35,7 @@ namespace Book_re
             }
         }
 
-        private void RemovePlaceholder(object sender, EventArgs e)
+       private void RemovePlaceholder(object sender, EventArgs e)
         {
             Sunny.UI.UITextBox txt = (Sunny.UI.UITextBox)sender;
             if (txt.Text == searchHold)
