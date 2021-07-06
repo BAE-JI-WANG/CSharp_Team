@@ -18,10 +18,11 @@ namespace Book_re
         {//접속해주는 함수
             try
             {
-                string connect = string.Format("Data Source={@};" +
-                "Initial Catalog = {1};" +
-                "Persist Security Info = True;" +
-                "User ID = team; Password = 1234","local", "Csharp Team");//192.168.0.84,1433
+                string connect = string.Format("Data Source=({0}); " +
+                            "Initial Catalog = {1};" +
+                            "Integrated Security = {2};" +
+                            "Timeout = 3"
+                            , "local", "Csharp_Team", "SSPI");
                 conn = new SqlConnection(connect);
                 conn.Open();
             }

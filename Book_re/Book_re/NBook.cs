@@ -17,7 +17,7 @@ namespace Book_re
         public string image { get; set; }
 
 
-        public Book(string title, string author, string publisher, string description, string link, string isbn, string image)
+        public NBook(string title, string author, string publisher, string description, string link, string isbn, string image)
         {
             this.title = title;
             this.author = author;

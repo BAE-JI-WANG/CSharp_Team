@@ -25,9 +25,16 @@ namespace Book_re
             InitializeComponent();
             this.GetTitle = btitle;
             txt_booksearch.Text = GetTitle;
+            BookSearch_Api();
+
         }
 
         private void bt_booksearch_Click(object sender, EventArgs e)
+        {
+            BookSearch_Api();
+        }
+
+        private void BookSearch_Api()
         {
             List<NBook> books = new List<NBook>();
             try
@@ -65,14 +72,14 @@ namespace Book_re
                     books.Add(new NBook(title, author, publisher, description, link, isbn, image));
                     Console.WriteLine(author + " " + title + " " + publisher + " " + link);
                     pictureBox1.ImageLocation = parseJson["items"][0]["image"].ToString();
-                    
 
-                   
+
+
                 }
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = books;
-               
+
 
             }
             catch (Exception exc)
@@ -83,6 +90,7 @@ namespace Book_re
 
 
         }
+
         private string getResults()
         {
             string keyword = txt_booksearch.Text;//검색어
