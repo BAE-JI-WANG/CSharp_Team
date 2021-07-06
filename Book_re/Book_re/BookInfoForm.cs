@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,6 @@ namespace Book_re
             this.GetTitle = btitle;
             txt_booksearch.Text = GetTitle;
             BookSearch_Api();
-
         }
 
         private void bt_booksearch_Click(object sender, EventArgs e)
@@ -77,8 +77,10 @@ namespace Book_re
 
                 }
 
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = books;
+                DGV_bookinfo.DataSource = null;
+                DGV_bookinfo.DataSource = books;
+                DGV_discription.DataSource = null;
+                DGV_discription.DataSource = books;
 
 
             }
@@ -136,6 +138,11 @@ namespace Book_re
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void DGV_bookinfo_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            System.Diagnostics.Process.Start(DGV_bookinfo.Rows[0].Cells[3].Value.ToString());
         }
     }
 }
