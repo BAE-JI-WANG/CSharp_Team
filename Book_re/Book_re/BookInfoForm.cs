@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,44 +27,34 @@ namespace Book_re
 
         private void bt_booksearch_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(GetTitle);
-            //WebRequest request = null;
-            //request = WebRequest.Create("https://openapi.naver.com/v1/search/book_adv.xml");
-            //request.Headers.Add("X-Naver-Client-Id", "l87hDaOsW43gnG4tEuHr");
-            //request.Headers.Add("X-Naver-Client-Secret", "hbrV0_tmzo");
-
-            string qeury_str = "https://openapi.naver.com/v1/search/book_adv.xml?key=l87hDaOsW43gnG4tEuHr&query={1}";
-            string key = "l87hDaOsW43gnG4tEuHr";
-
-            string query = txt_booksearch.Text;
-            string real_query = string.Format(qeury_str, key, query);
-
-            XmlDocument xdoc = new XmlDocument();
-            xdoc.Load(real_query);
-            XmlNode rn = xdoc.SelectSingleNode("rss");
-            XmlNode cn = rn.SelectSingleNode("channel");
-            XmlNodeList xnl = cn.SelectNodes("item");
-
-            foreach (XmlNode xn in xnl)
+            try
             {
-                string d_titl = xn.SelectSingleNode("d_titl").InnerText;
-                string d_auth = xn.SelectSingleNode("d_auth").InnerText;
-                string d_cont = xn.SelectSingleNode("d_cont").InnerText;
-                string d_isbn = xn.SelectSingleNode("d_isbn").InnerText;
-                string d_publ = xn.SelectSingleNode("d_publ").InnerText;
-                string d_dafr = xn.SelectSingleNode("d_dafr").InnerText;
-                string d_dato = xn.SelectSingleNode("d_dato").InnerText;
-                string d_catg = xn.SelectSingleNode("d_catg").InnerText;
-
-                string constr = @"Data Source";
-
-                using (SqlConnection scon = new SqlConnection())
+                string query = txt_booksearch.Text; // 검색할 문자열
+                //string url = "https://openapi.naver.com/v1/search/book_adv.xml?query=" + query;
+                string url = $"https://openapi.naver.com/v1/search/book.xml?query={query}&display=1&start=1";
+                Console.WriteLine(url);
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Headers.Add("X-Naver-Client-Id", "l87hDaOsW43gnG4tEuHr"); // 클라이언트 아이디
+                request.Headers.Add("X-Naver-Client-Secret", "hbrV0_tmzo");       // 클라이언트 시크릿
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                string status = response.StatusCode.ToString();
+                if (status == "OK")
                 {
-                    scon.Open();
-
-                    string context = @"INSERT Movie VALUES (@TITLE,@)";
+                    Stream stream = response.GetResponseStream();
+                    StreamReader reader = new StreamReader(stream, Encoding.UTF8);
+                    string text = reader.ReadToEnd();
+                    Console.WriteLine(text);
+                }
+                else
+                {
+                    Console.WriteLine("Error 발생=" + status);
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            
         }
 
         private void MakeBook(XmlNode xn)

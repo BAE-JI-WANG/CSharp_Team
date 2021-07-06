@@ -122,17 +122,15 @@ namespace Book_re
             //{
             //    show_data(udArray[i]);
             //}
-            //uiTabControl1.SelectedIndex = DGV_Subject.CurrentRow.Index;
-            // Console.WriteLine( ((UIDataGridView) sender).ToString());
-            
+            uiTabControl1.SelectedIndex = DGV_Subject.CurrentRow.Index;
+            Console.WriteLine(((UIDataGridView)sender).ToString());
+
         }
 
-        private void DGV_rank1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DGV_rank_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string btitle = DGV_rank1.Rows[e.RowIndex].Cells[3].Value.ToString();
-
+            string btitle = (sender as UIDataGridView).Rows[e.RowIndex].Cells[3].Value.ToString();
             BookInfoForm bifrm = new BookInfoForm(btitle);
-
             bifrm.Owner = this;
             bifrm.Show();
             //MessageBox.Show(btitle);
