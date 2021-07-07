@@ -93,104 +93,60 @@ namespace Book_re
             this.uiPanel1 = new Sunny.UI.UIPanel();
             this.DGV_rank1 = new Sunny.UI.UIDataGridView();
             this.bookrank = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.writerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pyear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.uiLabel11 = new Sunny.UI.UILabel();
             this.tb2 = new System.Windows.Forms.TabPage();
             this.uiPanel2 = new Sunny.UI.UIPanel();
             this.DGV_rank2 = new Sunny.UI.UIDataGridView();
+            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel10 = new Sunny.UI.UILabel();
             this.tb3 = new System.Windows.Forms.TabPage();
             this.uiPanel3 = new Sunny.UI.UIPanel();
             this.DGV_rank3 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel9 = new Sunny.UI.UILabel();
             this.tb4 = new System.Windows.Forms.TabPage();
             this.uiPanel4 = new Sunny.UI.UIPanel();
             this.DGV_rank4 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel8 = new Sunny.UI.UILabel();
             this.tb5 = new System.Windows.Forms.TabPage();
             this.uiPanel5 = new Sunny.UI.UIPanel();
             this.DGV_rank5 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.tb6 = new System.Windows.Forms.TabPage();
             this.uiPanel6 = new Sunny.UI.UIPanel();
             this.DGV_rank6 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.tb7 = new System.Windows.Forms.TabPage();
             this.uiPanel7 = new Sunny.UI.UIPanel();
             this.DGV_rank7 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel5 = new Sunny.UI.UILabel();
             this.tb8 = new System.Windows.Forms.TabPage();
             this.uiPanel8 = new Sunny.UI.UIPanel();
             this.DGV_rank8 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.tb9 = new System.Windows.Forms.TabPage();
             this.uiPanel9 = new Sunny.UI.UIPanel();
             this.DGV_rank9 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.tb10 = new System.Windows.Forms.TabPage();
             this.uiPanel10 = new Sunny.UI.UIPanel();
             this.DGV_rank10 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.DGV_Subject = new Sunny.UI.UIDataGridView();
@@ -210,20 +166,63 @@ namespace Book_re
             this.bt_chart = new Sunny.UI.UIImageButton();
             this.bt_recommend = new Sunny.UI.UIImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bookRankBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.writerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookRankBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.uiTabControl1.SuspendLayout();
             this.tb1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_rank1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource3)).BeginInit();
             this.tb2.SuspendLayout();
             this.uiPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_rank2)).BeginInit();
@@ -260,6 +259,7 @@ namespace Book_re
             ((System.ComponentModel.ISupportInitialize)(this.bt_chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_recommend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookRankBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -282,6 +282,7 @@ namespace Book_re
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1226, 689);
             this.panel1.TabIndex = 0;
+       
             // 
             // uiLabel1
             // 
@@ -387,7 +388,7 @@ namespace Book_re
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Maroon;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.PeachPuff;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -436,52 +437,6 @@ namespace Book_re
             this.bookrank.ReadOnly = true;
             this.bookrank.Width = 50;
             // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "카테고리";
-            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bidDataGridViewTextBoxColumn
-            // 
-            this.bidDataGridViewTextBoxColumn.DataPropertyName = "bid";
-            this.bidDataGridViewTextBoxColumn.HeaderText = "책 번호";
-            this.bidDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.bidDataGridViewTextBoxColumn.Name = "bidDataGridViewTextBoxColumn";
-            this.bidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bidDataGridViewTextBoxColumn.Visible = false;
-            this.bidDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
-            this.titleDataGridViewTextBoxColumn.FillWeight = 150F;
-            this.titleDataGridViewTextBoxColumn.HeaderText = "  제목";
-            this.titleDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.titleDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // writerDataGridViewTextBoxColumn
-            // 
-            this.writerDataGridViewTextBoxColumn.DataPropertyName = "writer";
-            this.writerDataGridViewTextBoxColumn.FillWeight = 80F;
-            this.writerDataGridViewTextBoxColumn.HeaderText = "저자";
-            this.writerDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.writerDataGridViewTextBoxColumn.Name = "writerDataGridViewTextBoxColumn";
-            this.writerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.writerDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // publisherDataGridViewTextBoxColumn
-            // 
-            this.publisherDataGridViewTextBoxColumn.DataPropertyName = "publisher";
-            this.publisherDataGridViewTextBoxColumn.HeaderText = "출판사";
-            this.publisherDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.publisherDataGridViewTextBoxColumn.Name = "publisherDataGridViewTextBoxColumn";
-            this.publisherDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // pyear
             // 
             this.pyear.DataPropertyName = "pyear";
@@ -489,10 +444,6 @@ namespace Book_re
             this.pyear.MinimumWidth = 10;
             this.pyear.Name = "pyear";
             this.pyear.ReadOnly = true;
-            // 
-            // bookBindingSource3
-            // 
-            this.bookBindingSource3.DataSource = typeof(Book_re.Book);
             // 
             // uiLabel11
             // 
@@ -603,6 +554,24 @@ namespace Book_re
             this.DGV_rank2.StyleCustomMode = true;
             this.DGV_rank2.TabIndex = 12;
             this.DGV_rank2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_rank_CellClick);
+            // 
+            // dataGridViewTextBoxColumn64
+            // 
+            this.dataGridViewTextBoxColumn64.DataPropertyName = "bookrank";
+            this.dataGridViewTextBoxColumn64.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn64.HeaderText = "순위";
+            this.dataGridViewTextBoxColumn64.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
+            this.dataGridViewTextBoxColumn64.ReadOnly = true;
+            this.dataGridViewTextBoxColumn64.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn70
+            // 
+            this.dataGridViewTextBoxColumn70.DataPropertyName = "pyear";
+            this.dataGridViewTextBoxColumn70.HeaderText = "출판일";
+            this.dataGridViewTextBoxColumn70.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
+            this.dataGridViewTextBoxColumn70.ReadOnly = true;
             // 
             // uiLabel10
             // 
@@ -723,54 +692,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn2.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn3.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn4.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn5.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn6.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -901,54 +822,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Width = 50;
             // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn9.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn10.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Visible = false;
-            this.dataGridViewTextBoxColumn10.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn11.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn12.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn12.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn13.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 200;
-            // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.DataPropertyName = "pyear";
@@ -1077,54 +950,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.ReadOnly = true;
             this.dataGridViewTextBoxColumn15.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn16.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn17.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            this.dataGridViewTextBoxColumn17.Visible = false;
-            this.dataGridViewTextBoxColumn17.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn18.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn18.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            this.dataGridViewTextBoxColumn18.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn19.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn19.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            this.dataGridViewTextBoxColumn19.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn20.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            this.dataGridViewTextBoxColumn20.Width = 200;
             // 
             // dataGridViewTextBoxColumn21
             // 
@@ -1255,54 +1080,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn22.ReadOnly = true;
             this.dataGridViewTextBoxColumn22.Width = 50;
             // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn23.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            this.dataGridViewTextBoxColumn23.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn24.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            this.dataGridViewTextBoxColumn24.Visible = false;
-            this.dataGridViewTextBoxColumn24.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn25.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn25.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn26.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn26.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn26.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn27.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn27.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 200;
-            // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.DataPropertyName = "pyear";
@@ -1431,54 +1208,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
             this.dataGridViewTextBoxColumn29.ReadOnly = true;
             this.dataGridViewTextBoxColumn29.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn30.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn30.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn31.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn31.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            this.dataGridViewTextBoxColumn31.Visible = false;
-            this.dataGridViewTextBoxColumn31.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn32.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn32.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn32.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn33.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn33.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn33.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn34.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn34.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Width = 200;
             // 
             // dataGridViewTextBoxColumn35
             // 
@@ -1609,54 +1338,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn36.ReadOnly = true;
             this.dataGridViewTextBoxColumn36.Width = 50;
             // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn37.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn37.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            this.dataGridViewTextBoxColumn37.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn38.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn38.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.ReadOnly = true;
-            this.dataGridViewTextBoxColumn38.Visible = false;
-            this.dataGridViewTextBoxColumn38.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn39.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn39.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn39.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            this.dataGridViewTextBoxColumn39.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn40.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn40.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn40.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.ReadOnly = true;
-            this.dataGridViewTextBoxColumn40.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn41.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn41.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
-            this.dataGridViewTextBoxColumn41.Width = 200;
-            // 
             // dataGridViewTextBoxColumn42
             // 
             this.dataGridViewTextBoxColumn42.DataPropertyName = "pyear";
@@ -1786,54 +1467,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn43.ReadOnly = true;
             this.dataGridViewTextBoxColumn43.Width = 50;
             // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn44.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn44.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.ReadOnly = true;
-            this.dataGridViewTextBoxColumn44.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn45
-            // 
-            this.dataGridViewTextBoxColumn45.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn45.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn45.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
-            this.dataGridViewTextBoxColumn45.ReadOnly = true;
-            this.dataGridViewTextBoxColumn45.Visible = false;
-            this.dataGridViewTextBoxColumn45.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn46
-            // 
-            this.dataGridViewTextBoxColumn46.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn46.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn46.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn46.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
-            this.dataGridViewTextBoxColumn46.ReadOnly = true;
-            this.dataGridViewTextBoxColumn46.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn47.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn47.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn47.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.ReadOnly = true;
-            this.dataGridViewTextBoxColumn47.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn48.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn48.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.ReadOnly = true;
-            this.dataGridViewTextBoxColumn48.Width = 200;
-            // 
             // dataGridViewTextBoxColumn49
             // 
             this.dataGridViewTextBoxColumn49.DataPropertyName = "pyear";
@@ -1962,54 +1595,6 @@ namespace Book_re
             this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
             this.dataGridViewTextBoxColumn50.ReadOnly = true;
             this.dataGridViewTextBoxColumn50.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn51
-            // 
-            this.dataGridViewTextBoxColumn51.DataPropertyName = "category";
-            this.dataGridViewTextBoxColumn51.HeaderText = "카테고리";
-            this.dataGridViewTextBoxColumn51.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
-            this.dataGridViewTextBoxColumn51.ReadOnly = true;
-            this.dataGridViewTextBoxColumn51.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn52
-            // 
-            this.dataGridViewTextBoxColumn52.DataPropertyName = "bid";
-            this.dataGridViewTextBoxColumn52.HeaderText = "책 번호";
-            this.dataGridViewTextBoxColumn52.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
-            this.dataGridViewTextBoxColumn52.ReadOnly = true;
-            this.dataGridViewTextBoxColumn52.Visible = false;
-            this.dataGridViewTextBoxColumn52.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn53
-            // 
-            this.dataGridViewTextBoxColumn53.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn53.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn53.HeaderText = "  제목";
-            this.dataGridViewTextBoxColumn53.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            this.dataGridViewTextBoxColumn53.ReadOnly = true;
-            this.dataGridViewTextBoxColumn53.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn54
-            // 
-            this.dataGridViewTextBoxColumn54.DataPropertyName = "writer";
-            this.dataGridViewTextBoxColumn54.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn54.HeaderText = "저자";
-            this.dataGridViewTextBoxColumn54.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            this.dataGridViewTextBoxColumn54.ReadOnly = true;
-            this.dataGridViewTextBoxColumn54.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn55
-            // 
-            this.dataGridViewTextBoxColumn55.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn55.HeaderText = "출판사";
-            this.dataGridViewTextBoxColumn55.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            this.dataGridViewTextBoxColumn55.ReadOnly = true;
-            this.dataGridViewTextBoxColumn55.Width = 200;
             // 
             // dataGridViewTextBoxColumn56
             // 
@@ -2290,6 +1875,7 @@ namespace Book_re
             this.bt_chart.TabIndex = 2;
             this.bt_chart.TabStop = false;
             this.bt_chart.Text = null;
+            this.bt_chart.Click += new System.EventHandler(this.bt_chart_Click);
             // 
             // bt_recommend
             // 
@@ -2314,19 +1900,55 @@ namespace Book_re
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // bookRankBindingSource
+            // categoryDataGridViewTextBoxColumn
             // 
-            this.bookRankBindingSource.DataSource = typeof(Book_re.BookRank);
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "카테고리";
+            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn64
+            // bidDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn64.DataPropertyName = "bookrank";
-            this.dataGridViewTextBoxColumn64.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn64.HeaderText = "순위";
-            this.dataGridViewTextBoxColumn64.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
-            this.dataGridViewTextBoxColumn64.ReadOnly = true;
-            this.dataGridViewTextBoxColumn64.Width = 50;
+            this.bidDataGridViewTextBoxColumn.DataPropertyName = "bid";
+            this.bidDataGridViewTextBoxColumn.HeaderText = "책 번호";
+            this.bidDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.bidDataGridViewTextBoxColumn.Name = "bidDataGridViewTextBoxColumn";
+            this.bidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bidDataGridViewTextBoxColumn.Visible = false;
+            this.bidDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
+            this.titleDataGridViewTextBoxColumn.FillWeight = 150F;
+            this.titleDataGridViewTextBoxColumn.HeaderText = "  제목";
+            this.titleDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
+            this.titleDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // writerDataGridViewTextBoxColumn
+            // 
+            this.writerDataGridViewTextBoxColumn.DataPropertyName = "writer";
+            this.writerDataGridViewTextBoxColumn.FillWeight = 80F;
+            this.writerDataGridViewTextBoxColumn.HeaderText = "저자";
+            this.writerDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.writerDataGridViewTextBoxColumn.Name = "writerDataGridViewTextBoxColumn";
+            this.writerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.writerDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // publisherDataGridViewTextBoxColumn
+            // 
+            this.publisherDataGridViewTextBoxColumn.DataPropertyName = "publisher";
+            this.publisherDataGridViewTextBoxColumn.HeaderText = "출판사";
+            this.publisherDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.publisherDataGridViewTextBoxColumn.Name = "publisherDataGridViewTextBoxColumn";
+            this.publisherDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bookBindingSource3
+            // 
+            this.bookBindingSource3.DataSource = typeof(Book_re.Book);
             // 
             // dataGridViewTextBoxColumn65
             // 
@@ -2373,13 +1995,393 @@ namespace Book_re
             this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
             this.dataGridViewTextBoxColumn69.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn70
+            // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn70.DataPropertyName = "pyear";
-            this.dataGridViewTextBoxColumn70.HeaderText = "출판일";
-            this.dataGridViewTextBoxColumn70.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
-            this.dataGridViewTextBoxColumn70.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn2.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn3.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            this.dataGridViewTextBoxColumn3.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn4.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn5.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn6.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn9.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn10.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Visible = false;
+            this.dataGridViewTextBoxColumn10.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn11.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn11.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn12.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn12.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn13.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn16.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn17.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            this.dataGridViewTextBoxColumn17.Visible = false;
+            this.dataGridViewTextBoxColumn17.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn18.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn18.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            this.dataGridViewTextBoxColumn18.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn19.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn19.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            this.dataGridViewTextBoxColumn19.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn20.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            this.dataGridViewTextBoxColumn20.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn23.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn24.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            this.dataGridViewTextBoxColumn24.Visible = false;
+            this.dataGridViewTextBoxColumn24.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn25.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn25.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            this.dataGridViewTextBoxColumn25.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn26.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn26.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn27.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn30.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn30.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn31.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn31.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.dataGridViewTextBoxColumn31.Visible = false;
+            this.dataGridViewTextBoxColumn31.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn32.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn32.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn32.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            this.dataGridViewTextBoxColumn32.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn33.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn33.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn33.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn34.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn34.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.dataGridViewTextBoxColumn34.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn37.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn37.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
+            this.dataGridViewTextBoxColumn37.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn38.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn38.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
+            this.dataGridViewTextBoxColumn38.Visible = false;
+            this.dataGridViewTextBoxColumn38.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn39.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn39.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn39.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            this.dataGridViewTextBoxColumn39.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn40.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn40.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn40.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            this.dataGridViewTextBoxColumn40.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn41.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn41.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            this.dataGridViewTextBoxColumn41.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn44
+            // 
+            this.dataGridViewTextBoxColumn44.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn44.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn44.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
+            this.dataGridViewTextBoxColumn44.ReadOnly = true;
+            this.dataGridViewTextBoxColumn44.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn45
+            // 
+            this.dataGridViewTextBoxColumn45.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn45.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn45.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            this.dataGridViewTextBoxColumn45.ReadOnly = true;
+            this.dataGridViewTextBoxColumn45.Visible = false;
+            this.dataGridViewTextBoxColumn45.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn46
+            // 
+            this.dataGridViewTextBoxColumn46.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn46.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn46.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn46.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
+            this.dataGridViewTextBoxColumn46.ReadOnly = true;
+            this.dataGridViewTextBoxColumn46.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn47
+            // 
+            this.dataGridViewTextBoxColumn47.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn47.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn47.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn47.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
+            this.dataGridViewTextBoxColumn47.ReadOnly = true;
+            this.dataGridViewTextBoxColumn47.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn48
+            // 
+            this.dataGridViewTextBoxColumn48.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn48.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn48.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
+            this.dataGridViewTextBoxColumn48.ReadOnly = true;
+            this.dataGridViewTextBoxColumn48.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn51
+            // 
+            this.dataGridViewTextBoxColumn51.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn51.HeaderText = "카테고리";
+            this.dataGridViewTextBoxColumn51.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
+            this.dataGridViewTextBoxColumn51.ReadOnly = true;
+            this.dataGridViewTextBoxColumn51.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn52
+            // 
+            this.dataGridViewTextBoxColumn52.DataPropertyName = "bid";
+            this.dataGridViewTextBoxColumn52.HeaderText = "책 번호";
+            this.dataGridViewTextBoxColumn52.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
+            this.dataGridViewTextBoxColumn52.ReadOnly = true;
+            this.dataGridViewTextBoxColumn52.Visible = false;
+            this.dataGridViewTextBoxColumn52.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn53
+            // 
+            this.dataGridViewTextBoxColumn53.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn53.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn53.HeaderText = "  제목";
+            this.dataGridViewTextBoxColumn53.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
+            this.dataGridViewTextBoxColumn53.ReadOnly = true;
+            this.dataGridViewTextBoxColumn53.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn54
+            // 
+            this.dataGridViewTextBoxColumn54.DataPropertyName = "writer";
+            this.dataGridViewTextBoxColumn54.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn54.HeaderText = "저자";
+            this.dataGridViewTextBoxColumn54.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
+            this.dataGridViewTextBoxColumn54.ReadOnly = true;
+            this.dataGridViewTextBoxColumn54.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn55
+            // 
+            this.dataGridViewTextBoxColumn55.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn55.HeaderText = "출판사";
+            this.dataGridViewTextBoxColumn55.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
+            this.dataGridViewTextBoxColumn55.ReadOnly = true;
+            this.dataGridViewTextBoxColumn55.Width = 200;
+            // 
+            // bookRankBindingSource
+            // 
+            this.bookRankBindingSource.DataSource = typeof(Book_re.BookRank);
             // 
             // Form1
             // 
@@ -2398,7 +2400,6 @@ namespace Book_re
             this.tb1.ResumeLayout(false);
             this.uiPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_rank1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource3)).EndInit();
             this.tb2.ResumeLayout(false);
             this.uiPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_rank2)).EndInit();
@@ -2436,6 +2437,7 @@ namespace Book_re
             ((System.ComponentModel.ISupportInitialize)(this.bt_chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_recommend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookRankBindingSource)).EndInit();
             this.ResumeLayout(false);
 

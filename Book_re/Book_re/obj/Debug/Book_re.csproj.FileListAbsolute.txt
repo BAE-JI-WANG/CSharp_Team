@@ -28,3 +28,4 @@ D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csproj.CopyComplete
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.exe
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.pdb
 D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.csprojAssemblyReference.cache
+D:\CSharp_Team\Book_re\Book_re\obj\Debug\Book_re.chartView.resources

@@ -72,25 +72,17 @@ namespace Book_re
                     books.Add(new NBook(title, author, publisher, description, link, isbn, image));
                     Console.WriteLine(author + " " + title + " " + publisher + " " + link);
                     pictureBox1.ImageLocation = parseJson["items"][0]["image"].ToString();
-
-
-
                 }
-
                 DGV_bookinfo.DataSource = null;
                 DGV_bookinfo.DataSource = books;
                 DGV_discription.DataSource = null;
                 DGV_discription.DataSource = books;
-
-
             }
             catch (Exception exc)
             {
                 Debug.WriteLine(exc.Message);
                 Console.WriteLine(exc.Message);
             }
-
-
         }
 
         private string getResults()

@@ -135,5 +135,12 @@ namespace Book_re
             bifrm.Show();
             //MessageBox.Show(btitle);
         }
+
+        private void bt_chart_Click(object sender, EventArgs e)
+        {
+            new chartView().ShowDialog();
+        }
+
+        
     }
 }

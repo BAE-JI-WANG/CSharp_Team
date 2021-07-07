@@ -23,5 +23,15 @@ namespace Book_re
                 rank.Add(temp);
             }
         }
+      public int count_category(string query)
+        {
+            DBHelper.count(query);
+            int count = 0;
+            foreach (DataRow item in DBHelper.ds.Tables[0].Rows)
+            {
+                count = int.Parse(item["카테고리"].ToString());
+            }
+            return count;
+        }
     }
 }
