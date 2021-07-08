@@ -32,4 +32,17 @@ namespace Book_re
         public string category { get; set; }
         public string pYear { get; set; }
     }
+
+    public class ExCheck
+    {
+        public string check { get; set; }
+
+        public ExCheck()
+        { }
+
+        public ExCheck(string check)
+        {
+            this.check = check;
+        }
+    }
 }
