@@ -44,6 +44,11 @@ namespace Book_re
             conn.Close();
         }
 
+        public static void CheckReturndate(string pid, string bid)
+        {
+            
+        }
+
         public static void BookRnetCount(string bid)
         {
             ConnectDB();
@@ -236,6 +241,33 @@ namespace Book_re
             da.Fill(ds);
 
             conn.Close();
+        }
+
+        public static DateTime OverdueMember(string pid)
+        {
+            ConnectDB();
+            string overdueDate;
+            string sqlcommand = "select overdue from Csharp_Team.dbo.member where id=@p";
+            da = new SqlDataAdapter();
+
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@p", pid);
+
+            cmd.CommandText = sqlcommand;
+
+            da.SelectCommand = cmd;
+            cmd.ExecuteNonQuery();
+            ds = new DataSet();
+            overdueDate = cmd.ExecuteScalar().ToString();
+            DateTime returntime = DateTime.Parse(overdueDate);
+
+            conn.Close();
+
+            return returntime;
         }
     }
 }

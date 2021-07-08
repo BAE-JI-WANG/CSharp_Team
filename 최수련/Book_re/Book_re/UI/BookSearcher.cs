@@ -74,7 +74,7 @@ namespace Book_re
         {
            
             int rowIndex = dataGridView1.CurrentRow.Index;
-            instances.Rent("1234", dataGridView1.Rows[rowIndex].Cells[4].Value.ToString(), dataGridView1.Rows[rowIndex].Cells[1].Value.ToString());
+            instances.Rent("abc1234", dataGridView1.Rows[rowIndex].Cells[4].Value.ToString(), dataGridView1.Rows[rowIndex].Cells[1].Value.ToString());
             
         }
     }

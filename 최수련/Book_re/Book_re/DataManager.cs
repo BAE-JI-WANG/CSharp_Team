@@ -35,10 +35,19 @@ namespace Book_re
 
         public void Rent(string pid, string bid, string bname)
         {
-            DBHelper.RentBook(pid, bid,bname);//책대여
-            DBHelper.BookRnetCount(bid);//책카운트증가
-        }
+            if (DBHelper.OverdueMember(pid) > DateTime.Now)
+            {
+                System.Windows.Forms.MessageBox.Show("연체된 이용자입니다.");
+            }
+ 
+            else
+            {
+                DBHelper.RentBook(pid, bid, bname);//책대여
+                DBHelper.BookRnetCount(bid);//책카운트증가
 
+            }
+
+        }
         public void ViewMyList(string pid)
         {
             DBHelper.ReadRentalList(pid);
