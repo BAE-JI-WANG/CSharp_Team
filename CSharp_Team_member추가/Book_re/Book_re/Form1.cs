@@ -175,7 +175,7 @@ namespace Book_re
 
         private void bt_icon_signout_Click(object sender, EventArgs e)
         {
-            islogon = false;
+            this.islogon = false;
             MessageBox.Show("로그아웃 되었습니다.");
         }
     }

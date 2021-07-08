@@ -38,7 +38,7 @@ namespace Book_re
             temp.Gender = Rbt_F.Text;
         }
 
-        private void txt_pwd_TextChanged(object sender, EventArgs e)
+        private void txt_pwd_join_TextChanged(object sender, EventArgs e)
         {
             if (txt_pwd_join.Text == txt_pwdck_join.Text)
             {
@@ -49,7 +49,8 @@ namespace Book_re
                 label_pw_check.Text = "일치하지 않습니다.";
             }
         }
-        private void txt_pwdck_TextChanged(object sender, EventArgs e)
+
+        private void txt_pwdck_join_TextChanged(object sender, EventArgs e)
         {
             if (txt_pwd_join.Text == txt_pwdck_join.Text)
             {

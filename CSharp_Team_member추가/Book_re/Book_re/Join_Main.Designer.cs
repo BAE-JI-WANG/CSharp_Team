@@ -35,6 +35,7 @@ namespace Book_re
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label_pw_check = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -62,7 +63,6 @@ namespace Book_re
             this.bt_close = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label_pw_check = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -139,6 +139,16 @@ namespace Book_re
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(389, 510);
             this.panel4.TabIndex = 32;
+            // 
+            // label_pw_check
+            // 
+            this.label_pw_check.AutoSize = true;
+            this.label_pw_check.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_pw_check.Location = new System.Drawing.Point(182, 321);
+            this.label_pw_check.Name = "label_pw_check";
+            this.label_pw_check.Size = new System.Drawing.Size(53, 15);
+            this.label_pw_check.TabIndex = 71;
+            this.label_pw_check.Text = "label12";
             // 
             // pictureBox1
             // 
@@ -305,6 +315,7 @@ namespace Book_re
             this.txt_pwdck_join.PasswordChar = '*';
             this.txt_pwdck_join.Size = new System.Drawing.Size(138, 21);
             this.txt_pwdck_join.TabIndex = 40;
+            this.txt_pwdck_join.TextChanged += new System.EventHandler(this.txt_pwdck_join_TextChanged);
             // 
             // txt_pwd_join
             // 
@@ -313,6 +324,7 @@ namespace Book_re
             this.txt_pwd_join.PasswordChar = '*';
             this.txt_pwd_join.Size = new System.Drawing.Size(138, 21);
             this.txt_pwd_join.TabIndex = 39;
+            this.txt_pwd_join.TextChanged += new System.EventHandler(this.txt_pwd_join_TextChanged);
             // 
             // txt_id_join
             // 
@@ -391,16 +403,6 @@ namespace Book_re
             this.label1.Size = new System.Drawing.Size(155, 41);
             this.label1.TabIndex = 31;
             this.label1.Text = "회 원 가 입";
-            // 
-            // label_pw_check
-            // 
-            this.label_pw_check.AutoSize = true;
-            this.label_pw_check.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_pw_check.Location = new System.Drawing.Point(182, 321);
-            this.label_pw_check.Name = "label_pw_check";
-            this.label_pw_check.Size = new System.Drawing.Size(53, 15);
-            this.label_pw_check.TabIndex = 71;
-            this.label_pw_check.Text = "label12";
             // 
             // Join_Main
             // 
