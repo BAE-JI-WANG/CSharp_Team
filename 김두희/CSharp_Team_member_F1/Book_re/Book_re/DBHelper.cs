@@ -416,6 +416,8 @@ namespace Book_re
         }
 
         //----------------------member관련-----------------------------------------------------
+
+        //member관련
         public static void ConnectDB_member()
         {//MSSQL 접속해주는 함수
             try
@@ -433,12 +435,12 @@ namespace Book_re
                 Console.WriteLine(ex);
             }
         }
-        public static void Query_Select_member(string id="")
+        public static void Query_Select_member(string id = "")
         {
             ConnectDB_member();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            if(id=="")
+            if (id == "")
                 cmd.CommandText = "SELECT * FROM member";
             else
             {
@@ -446,13 +448,68 @@ namespace Book_re
                 cmd.CommandText = "SELECT * FROM member where id = @id";
 
             }
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            da.Fill(ds, "member");
 
+            conn.Close();
+        }
+
+        public static void Query_Select_member_findid(string name, string email)
+        {
+            ConnectDB_member();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "SELECT id FROM member where name = @name " +
+                    "and email = @email";
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@email", email);
 
             da = new SqlDataAdapter(cmd);
             ds = new DataSet();
             da.Fill(ds, "member");
 
             conn.Close();
+        }
+
+        public static void Query_Select_member_findpw(string id, string email)
+        {
+            ConnectDB_member();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "SELECT * FROM member where id = @id " +
+                    "and email = @email";
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@email", email);
+
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            da.Fill(ds, "member");
+
+            conn.Close();
+        }
+        public static void Query_Update_member_findpw(string pwd, string id, string email)
+        {
+            try
+            {
+                ConnectDB_member();
+
+                string sqlcommand = "Update member set " +
+                        "pwd=@p1 where id=@p2 and email = @p3";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@p1", pwd);
+                cmd.Parameters.AddWithValue("@p2", id);
+                cmd.Parameters.AddWithValue("@p3", email);
+                cmd.CommandText = sqlcommand;
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex1)
+            {
+                System.Windows.Forms.MessageBox.Show("입력정보를 확인하세요");
+            }
         }
 
         public static void Query_Insert_member(string name, string gender,
@@ -546,7 +603,6 @@ namespace Book_re
                 Console.WriteLine(ex1);
             }
         }
-
         //----------------------지도 관련------------------------------------
         public static void All()
         {

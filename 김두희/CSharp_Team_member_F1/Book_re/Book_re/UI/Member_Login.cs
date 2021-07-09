@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_re.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace Book_re
         const string IdPlaceholder = "아이디";
         const string PwPlaceholder = "비밀번호";
         public bool islogin;
+        int count = 0;//예외처리를 위한 변수
         public Member_Login()
         {
             InitializeComponent();
@@ -94,10 +96,15 @@ namespace Book_re
             }
             else
             {
+                count = 1;
                 MessageBox.Show("아이디/암호를 확인해 주세요.");
+                if (count == 1)
+                {
+                    label_find.Text = "로그인 정보를 잊으셨나요...?";
+                }
             }
-            login_id = null;//id, pw 초기화
-            login_password = null;
+            txt_ID_login.Text = null;
+            txt_PW_login.Text = null;
         }
         public string LoginID
         {
@@ -107,6 +114,7 @@ namespace Book_re
         private void bt_close_Click(object sender, EventArgs e)
         {
             Application.OpenForms["Member_Login"].Close();
+            this.islogin = false;
         }
 
         private void login_KeyUp_Event(object sender, KeyEventArgs e)
@@ -116,6 +124,11 @@ namespace Book_re
                 loginexe(txt_ID_login.Text, txt_PW_login.Text);
             }
         }
-    }
 
+        private void label_find_Click(object sender, EventArgs e)
+        {           
+            new Find_IDPW().Show();
+            Application.OpenForms["Member_Login"].Close();
+        }
+    }
 }

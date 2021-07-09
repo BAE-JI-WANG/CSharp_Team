@@ -32,6 +32,7 @@ namespace Book_re
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Member_Login));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label_find = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bt_join_login = new System.Windows.Forms.PictureBox();
             this.bt_close = new System.Windows.Forms.PictureBox();
@@ -62,6 +63,7 @@ namespace Book_re
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label_find);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.bt_join_login);
             this.panel3.Controls.Add(this.bt_close);
@@ -77,6 +79,17 @@ namespace Book_re
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(363, 424);
             this.panel3.TabIndex = 5;
+            // 
+            // label_find
+            // 
+            this.label_find.AutoSize = true;
+            this.label_find.BackColor = System.Drawing.Color.Transparent;
+            this.label_find.ForeColor = System.Drawing.Color.Black;
+            this.label_find.Location = new System.Drawing.Point(122, 246);
+            this.label_find.Name = "label_find";
+            this.label_find.Size = new System.Drawing.Size(0, 12);
+            this.label_find.TabIndex = 38;
+            this.label_find.Click += new System.EventHandler(this.label_find_Click);
             // 
             // label3
             // 
@@ -215,5 +228,6 @@ namespace Book_re
         private System.Windows.Forms.TextBox txt_ID_login;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label_find;
     }
 }

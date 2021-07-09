@@ -65,6 +65,12 @@
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\Library.cs" />
     <Compile Include="Model\MyLocale.cs" />
+    <Compile Include="UI\Find_IDPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Find_IDPW.Designer.cs">
+      <DependentUpon>Find_IDPW.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\LibraryRecommand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\RentalList.cs" />
     <Compile Include="Model\SearchBook.cs" />
+    <EmbeddedResource Include="UI\Find_IDPW.resx">
+      <DependentUpon>Find_IDPW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\LibraryRecommand.resx">
       <DependentUpon>LibraryRecommand.cs</DependentUpon>
     </EmbeddedResource>
