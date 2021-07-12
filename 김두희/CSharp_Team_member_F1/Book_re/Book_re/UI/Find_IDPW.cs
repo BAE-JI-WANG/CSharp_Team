@@ -61,7 +61,6 @@ namespace Book_re.UI
         {
             try
             {
-
                 label_output.Text = "당신의 id는 ";
                 DBHelper.Query_Select_member_findid(name, email);
                 label_output.Text += DBHelper.ds.Tables[0].Rows[0][0];
@@ -110,8 +109,6 @@ namespace Book_re.UI
                 panel_idck.Hide();
                 panel_pw_reset.Visible = true;
             }
-
-
         }
         private void bt_pwinput_Click(object sender, EventArgs e)
         {//비밀번호재설정3
@@ -124,7 +121,6 @@ namespace Book_re.UI
                 changePw(txt_password.Text, txt_id.Text, txt_email.Text);
 
             }
-
         }
         
         private void label_findid_Click(object sender, EventArgs e)
@@ -136,8 +132,6 @@ namespace Book_re.UI
         private void label_calllogin_Click(object sender, EventArgs e)
         {
             new Member_Login().Show();
-        }
-
-       
+        }              
     }
 }

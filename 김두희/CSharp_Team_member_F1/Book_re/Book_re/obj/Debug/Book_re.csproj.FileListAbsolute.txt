@@ -150,3 +150,4 @@ C:\Users\KB\Desktop\cSharp\CSharp_Team_member_F1\Book_re\Book_re\obj\Debug\Book_
 C:\Users\KB\Desktop\cSharp\CSharp_Team_member_F1\Book_re\Book_re\obj\Debug\Book_re.exe
 C:\Users\KB\Desktop\cSharp\CSharp_Team_member_F1\Book_re\Book_re\obj\Debug\Book_re.pdb
 C:\Users\KB\Desktop\cSharp\CSharp_Team_member_F1\Book_re\Book_re\obj\Debug\Book_re.UI.Find_IDPW.resources
+C:\Users\KB\Desktop\cSharp\CSharp_Team_member_F1\Book_re\Book_re\obj\Debug\Book_re.csprojAssemblyReference.cache

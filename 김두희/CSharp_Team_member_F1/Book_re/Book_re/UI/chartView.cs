@@ -76,6 +76,7 @@ namespace Book_re
             //chart2 start "총류"
             int rank_cate0 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='총류'");
             chart2.Series[0].Name = "총류";
+            chart2.ChartAreas[0].AxisY.Maximum = 2500;
             chart2.Series[0].Points.AddXY("보유현황", cate00);
             chart2.Series[0].Points.AddXY("대출건수", rank_cate0);
             //chart2 end
@@ -83,6 +84,7 @@ namespace Book_re
             //chart3 "철학"
             int rank_cate1 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='철학'");
             chart3.Series[0].Name = "철학";
+            chart3.ChartAreas[0].AxisY.Maximum = 2500;
             chart3.Series[0].Points.AddXY("보유현황", cate01);
             chart3.Series[0].Points.AddXY("대출건수", rank_cate1);
             //chart3 end
@@ -90,6 +92,7 @@ namespace Book_re
             //chart4 "종교"
             int rank_cate2 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='종교'");
             chart4.Series[0].Name = "종교";
+            chart4.ChartAreas[0].AxisY.Maximum = 2500;
             chart4.Series[0].Points.AddXY("보유현황", cate02);
             chart4.Series[0].Points.AddXY("대출건수", rank_cate2);
             //chart4 end
@@ -97,6 +100,7 @@ namespace Book_re
             //chart5 "사회과학"
             int rank_cate3 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='사회과학'");
             chart5.Series[0].Name = "사회과학";
+            chart5.ChartAreas[0].AxisY.Maximum = 2500;
             chart5.Series[0].Points.AddXY("보유현황", cate03);
             chart5.Series[0].Points.AddXY("대출건수", rank_cate3);
             //chart5 end
@@ -104,6 +108,7 @@ namespace Book_re
             //chart6 "자연과학"
             int rank_cate4 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='자연과학'");
             chart6.Series[0].Name = "자연과학";
+            chart6.ChartAreas[0].AxisY.Maximum = 2500;
             chart6.Series[0].Points.AddXY("보유현황", cate04);
             chart6.Series[0].Points.AddXY("대출건수", rank_cate4);
             //chart6 end
@@ -111,6 +116,7 @@ namespace Book_re
             //chart7 "기술과학"
             int rank_cate5 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='기술과학'");
             chart7.Series[0].Name = "기술과학";
+            chart7.ChartAreas[0].AxisY.Maximum = 2500;
             chart7.Series[0].Points.AddXY("보유현황", cate05);
             chart7.Series[0].Points.AddXY("대출건수", rank_cate5);
             //chart7 end
@@ -118,6 +124,7 @@ namespace Book_re
             //chart8 "예술"
             int rank_cate6 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='예술'");
             chart8.Series[0].Name = "예술";
+            chart8.ChartAreas[0].AxisY.Maximum = 2500;
             chart8.Series[0].Points.AddXY("보유현황", cate06);
             chart8.Series[0].Points.AddXY("대출건수", rank_cate6);
             //chart8 end
@@ -125,6 +132,7 @@ namespace Book_re
             //chart9 "언어"
             int rank_cate7 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='언어'");
             chart9.Series[0].Name = "언어";
+            chart9.ChartAreas[0].AxisY.Maximum = 2500;
             chart9.Series[0].Points.AddXY("보유현황", cate07);
             chart9.Series[0].Points.AddXY("대출건수", rank_cate7);
             //chart9 end
@@ -132,6 +140,7 @@ namespace Book_re
             //chart10 "문학"
             int rank_cate8 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='문학'");
             chart10.Series[0].Name = "문학";
+            chart10.ChartAreas[0].AxisY.Maximum = 2500;
             chart10.Series[0].Points.AddXY("보유현황", cate08);
             chart10.Series[0].Points.AddXY("대출건수", rank_cate8);
             //chart10 end
@@ -139,6 +148,7 @@ namespace Book_re
             //chart11 "역사"
             int rank_cate9 = dm.count_rank("select category as 카테고리,sum(count)as '대출건수'from book group by category having category='역사'");
             chart11.Series[0].Name = "역사";
+            chart11.ChartAreas[0].AxisY.Maximum = 2500;
             chart11.Series[0].Points.AddXY("보유현황", cate09);
             chart11.Series[0].Points.AddXY("대출건수", rank_cate9);
             //chart11 end
